@@ -55,10 +55,10 @@ console.log("------ 8 uzduotis ---------");
 
 sum = 0;
 for (let i = 0; i <= 20; i++) {
-    if ( i%2 == 0 ) { continue; }
+    if (i % 2 == 0) { continue; }
     sum++;
 }
-console.log(sum + "  "); 
+console.log(sum + "  ");
 
 // 7/3 2.3333
 // 7%3 1
@@ -75,3 +75,21 @@ console.log(sum + "  ");
 //9 uzd
 console.log("------ 9 uzduotis ---------");
 
+let sum1 = 0;
+let sum2 = 0;
+let a = 0;
+console.log(words);
+for (let i = 0; i < words.length; i++) {
+    
+    a = words[i].length;
+    if (a < 5) { 
+       sum1++;   
+    } else if (a > 7 ){
+        sum2++;
+    }
+
+}
+  console.log(" Trumpesni, negu 5 simboliai:   " + sum1);
+  console.log(" Ilgesni, negu 7 simboliai:     " + sum2);
+
+  
