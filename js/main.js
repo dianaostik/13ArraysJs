@@ -44,3 +44,13 @@ for (let i = 10; i <= 50; i+=2) {
 //7 uzd
 console.log("------ 7 uzduotis ---------");
 
+let tuscia = "";
+for (let i = 10; i <= 50; i+=2) {
+    if (i === 10 || i === 20 || i === 30 || i === 40 || i === 50) 
+    { continue;}   
+    console.log(tuscia + i + "  ");  
+}
+
+//8 uzd
+console.log("------ 8 uzduotis ---------");
+
