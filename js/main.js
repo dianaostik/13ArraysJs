@@ -37,3 +37,10 @@ for (let i = words.length -1; i >= 0; i--) {
 //6 uzd
 console.log("------ 6 uzduotis ---------");
 
+for (let i = 10; i <= 50; i+=2) {
+    console.log(i);
+}
+
+//7 uzd
+console.log("------ 7 uzduotis ---------");
+
