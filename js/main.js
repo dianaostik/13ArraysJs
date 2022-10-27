@@ -109,13 +109,13 @@ console.log("------ 1 uzduotis ---------");
 let summa = 0;
 let text = "";
 for (let i = 0; i < 300; i++) {
-    let eile =Math.round(Math.random() * 300);
-    if (eile > 150 ) {
-        summa++;  
+    let eile = Math.round(Math.random() * 300);
+    if (eile > 150) {
+        summa++;
     }
-    if (eile > 275 ) {
-        text += "[" + eile + "] "; 
-    }else{
+    if (eile > 275) {
+        text += "[" + eile + "] ";
+    } else {
         text += eile + " ";
     }
 }
@@ -130,8 +130,8 @@ console.log("Didesni, nei 150 = " + summa);
 console.log("------ 2 uzduotis ---------");
 
 let text2 = "";
-for (let i = 77; i < 3001; i+=77) {
-    text2 += i + ","; 
+for (let i = 77; i < 3001; i += 77) {
+    text2 += i + ",";
 }
 console.log(text2.slice(0, -1));
 
@@ -139,20 +139,85 @@ console.log(text2.slice(0, -1));
 
 
 
-//3 uzd   
+//3 uzd  
 console.log("------ 3 uzduotis ---------");
 
-let elementas = document.getElementById("kvadratas");
-eilute = "";
-for (let s = 0; s < 10; s++) {
-    eilute += "<p>";
-    for (let i = 0; i < 10; i++) {
-     eilute += " * ";   
-} 
-eilute += "</p>";
+for (let a = 0; a < 10; a++) {
+    let arr = "";
+    for (let b = 0; b < 10; b++) {
+        arr += " * ";
+    }
+    console.log(arr);
 }
-elementas.innerHTML = eilute;
-
 
 // 4 uzd   
-console.log("------ 4 uzduotis ---------");
+// console.log("------ 4 uzduotis ---------");
+
+// let elementas = document.getElementById("kvadratas");
+// eilute = "";
+// for (let s = 0; s < 10; s++) {
+//     eilute += "<p>";
+//     for (let i = 0; i < 10; i++) {
+//         eilute += " * ";
+//     }
+//     eilute += "</p>";
+// }
+// elementas.innerHTML = eilute;
+
+
+
+//5 uzd   
+console.log("------ 5 uzduotis ---------");
+
+
+// // // Iskritus Herbui sustoja
+console.log("  Iskritus herbui  ");
+let moneta = Math.round(Math.random() * 1);
+while (moneta === 0) {
+    if (moneta === 0) {
+        console.log("H");
+    } else {
+        console.log("S");
+    }
+    break;
+}
+
+// 3 kartus iskritus herbui
+console.log("  3 kartus iskritus herbui   ");
+let count = 0;
+    while(true){
+        let coin = Math.round(Math.random()); 
+        if (coin === 0 ){
+            count++;
+            console.log("H");
+        }else{
+            console.log("S");
+        }
+
+        if(count == 3){
+            break;
+        }
+    }
+
+
+// // // 3 kartus IS EILES ikritus herbui
+console.log("  3 kartus is eiles iskritus herbui   ");
+let count2 = 0;
+while(true){
+    let coin = Math.round(Math.random()); 
+    if (coin === 0 ){
+        count2++;
+        console.log("H");
+        
+    }else{
+        console.log("S");
+        break;
+    }
+    if(count2 == 3){
+        break;
+    }
+}
+
+
+
+
