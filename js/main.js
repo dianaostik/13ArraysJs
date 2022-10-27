@@ -185,39 +185,66 @@ while (moneta === 0) {
 // 3 kartus iskritus herbui
 console.log("  3 kartus iskritus herbui   ");
 let count = 0;
-    while(true){
-        let coin = Math.round(Math.random()); 
-        if (coin === 0 ){
-            count++;
-            console.log("H");
-        }else{
-            console.log("S");
-        }
-
-        if(count == 3){
-            break;
-        }
-    }
-
-
-// // // 3 kartus IS EILES ikritus herbui
-console.log("  3 kartus is eiles iskritus herbui   ");
-let count2 = 0;
-while(true){
-    let coin = Math.round(Math.random()); 
-    if (coin === 0 ){
-        count2++;
+while (true) {
+    let coin = Math.round(Math.random());
+    if (coin === 0) {
+        count++;
         console.log("H");
-        
-    }else{
+    } else {
         console.log("S");
-        break;
     }
-    if(count2 == 3){
+
+    if (count == 3) {
         break;
     }
 }
 
 
+// // // 3 kartus IS EILES ikritus herbui
+console.log("  3 kartus is eiles iskritus herbui   ");
+let count2 = 0;
+while (true) {
+    let coin = Math.round(Math.random());
+    if (coin === 0) {
+        count2++;
+        console.log("H");
 
+    } else {
+        console.log("S");
+        break;
+    }
+    if (count2 == 3) {
+        break;
+    }
+}
+
+//  6 uzd   
+console.log("------ 6 uzduotis ---------");
+
+let namePetras = 0;
+let nameKazys = 0;
+
+while (true) {
+    let petras = Math.round(10 + Math.random() * 10);
+    let kazys = Math.round(5 + Math.random() * 20);
+    namePetras += petras;
+    nameKazys += kazys; 
+
+    if (namePetras >= 222 || nameKazys >= 222){
+        break;
+    }
+    }
+
+ console.log("Petras = " + namePetras);
+ console.log("Kazys = " + nameKazys);
+
+ if (namePetras > nameKazys) {
+    console.log("Partija laimejo: Petras");
+ } else {
+    console.log("Partija laimejo: Kazys");
+ }
+
+
+ //  8 uzd   
+console.log("------ 8 uzduotis ---------");
 
