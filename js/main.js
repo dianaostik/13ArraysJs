@@ -142,16 +142,16 @@ console.log(text2.slice(0, -1));
 //3 uzd   
 console.log("------ 3 uzduotis ---------");
 
-let eilute = "";
-for (let s = 0; s < 5; s++) {
-    for (let i = 0; i < 5; i++) {
-    eilute += " * "   
+let elementas = document.getElementById("kvadratas");
+eilute = "";
+for (let s = 0; s < 10; s++) {
+    eilute += "<p>";
+    for (let i = 0; i < 10; i++) {
+     eilute += " * ";   
 } 
+eilute += "</p>";
 }
-console.log(eilute);
-
-
-
+elementas.innerHTML = eilute;
 
 
 // 4 uzd   
