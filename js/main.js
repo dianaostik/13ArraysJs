@@ -83,17 +83,17 @@ let sum2 = 0;
 let a = 0;
 console.log(words);
 for (let i = 0; i < words.length; i++) {
-    
+
     a = words[i].length;
-    if (a < 5) { 
-       sum1++;   
-    } else if (a > 7 ){
+    if (a < 5) {
+        sum1++;
+    } else if (a > 7) {
         sum2++;
     }
 
 }
-  console.log(" Trumpesni, negu 5 simboliai:   " + sum1);
-  console.log(" Ilgesni, negu 7 simboliai:     " + sum2);
+console.log(" Trumpesni, negu 5 simboliai:   " + sum1);
+console.log(" Ilgesni, negu 7 simboliai:     " + sum2);
 
 // Sunkesni
 console.log("**** Sunkesni *****");
@@ -101,10 +101,17 @@ console.log("**** Sunkesni *****");
 //1 uzd
 console.log("------ 1 uzduotis ---------");
 
+
+
+let summa = 0;
 let text = "";
 for (let i = 0; i < 300; i++) {
     let eile = Math.random(0, 300).toString().slice(2, 5);
     const element = eile[i];
-    text += eile + " ";
+    if (eile > 150 ) {
+        summa++;
+        text += eile + " "; 
+    }
 }
 console.log(text);
+console.log("Didesni, nei 150 = " + summa);
