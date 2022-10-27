@@ -228,23 +228,46 @@ while (true) {
     let petras = Math.round(10 + Math.random() * 10);
     let kazys = Math.round(5 + Math.random() * 20);
     namePetras += petras;
-    nameKazys += kazys; 
+    nameKazys += kazys;
 
-    if (namePetras >= 222 || nameKazys >= 222){
+    if (namePetras >= 222 || nameKazys >= 222) {
         break;
     }
-    }
+}
 
- console.log("Petras = " + namePetras);
- console.log("Kazys = " + nameKazys);
+console.log("Petras = " + namePetras);
+console.log("Kazys = " + nameKazys);
 
- if (namePetras > nameKazys) {
+if (namePetras > nameKazys) {
     console.log("Partija laimejo: Petras");
- } else {
+} else {
     console.log("Partija laimejo: Kazys");
- }
+}
 
 
- //  8 uzd   
+//  8 uzd   
 console.log("------ 8 uzduotis ---------");
 
+
+
+let rezltsmall = 0;
+let hits = 0;
+while (hits <= 85) {
+    let hitOne = Math.round(5 + Math.random() * 15);
+    hits += hitOne;
+    rezltsmall++;
+    console.log(hits);
+}
+console.log("Mazu smugiu reikia: " + rezltsmall);
+
+let rezltbig = 0;
+let hits2 = 0;
+while (hits2 <= 85) {
+        let hitt = Math.round(20 + Math.random() * 10);
+        if (hitt !== 0) {
+        hits2 += hitt;
+        rezltbig++;
+        console.log(hits2);
+    }
+}
+console.log("Dideliu smugiu reikia: " + rezltbig); 
