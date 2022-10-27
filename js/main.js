@@ -151,18 +151,18 @@ for (let a = 0; a < 10; a++) {
 }
 
 // 4 uzd   
-// console.log("------ 4 uzduotis ---------");
+console.log("------ 4 uzduotis ---------");
 
-// let elementas = document.getElementById("kvadratas");
-// eilute = "";
-// for (let s = 0; s < 10; s++) {
-//     eilute += "<p>";
-//     for (let i = 0; i < 10; i++) {
-//         eilute += " * ";
-//     }
-//     eilute += "</p>";
-// }
-// elementas.innerHTML = eilute;
+let elementas = document.getElementById("kvadratas");
+eilute = "";
+for (let s = 0; s < 10; s++) {
+    eilute += "<p>";
+    for (let i = 0; i < 10; i++) {
+        eilute += " * ";
+    }
+    eilute += "</p>";
+}
+elementas.innerHTML = eilute;
 
 
 
