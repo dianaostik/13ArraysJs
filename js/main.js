@@ -102,17 +102,21 @@ console.log("**** Sunkesni *****");
 
 
 
-//1 uzd  ?
+//1 uzd  
 console.log("------ 1 uzduotis ---------");
+
 
 let summa = 0;
 let text = "";
 for (let i = 0; i < 300; i++) {
-    let eile = Math.random(0, 300).toString().slice(2, 5);
-    const element = eile[i];
+    let eile =Math.round(Math.random() * 300);
     if (eile > 150 ) {
-        summa++;
-        text += eile + " "; 
+        summa++;  
+    }
+    if (eile > 275 ) {
+        text += "[" + eile + "] "; 
+    }else{
+        text += eile + " ";
     }
 }
 console.log(text);
@@ -122,22 +126,14 @@ console.log("Didesni, nei 150 = " + summa);
 
 
 
-
-
-//2 uzd   ?
+//2 uzd   
 console.log("------ 2 uzduotis ---------");
 
 let text2 = "";
-for (let i = 1; i < 3001; i++) {
-    if (i % 77 == 0){
+for (let i = 77; i < 3001; i+=77) {
     text2 += i + ","; 
-    
-    }
 }
-console.log(text2);
-
-
-
+console.log(text2.slice(0, -1));
 
 
 
@@ -147,8 +143,8 @@ console.log(text2);
 console.log("------ 3 uzduotis ---------");
 
 let eilute = "";
-for (let s = 0; s < 100; s++) {
-    for (let i = 0; i < 100; i++) {
+for (let s = 0; s < 5; s++) {
+    for (let i = 0; i < 5; i++) {
     eilute += " * "   
 } 
 }
@@ -156,6 +152,7 @@ console.log(eilute);
 
 
 
+
+
 // 4 uzd   
 console.log("------ 4 uzduotis ---------");
-
