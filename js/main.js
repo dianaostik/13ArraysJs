@@ -98,7 +98,7 @@ console.log(" Ilgesni, negu 7 simboliai:     " + sum2);
 // Sunkesni
 console.log("**** Sunkesni *****");
 
-//1 uzd
+//1 uzd  
 console.log("------ 1 uzduotis ---------");
 
 
@@ -115,3 +115,15 @@ for (let i = 0; i < 300; i++) {
 }
 console.log(text);
 console.log("Didesni, nei 150 = " + summa);
+
+//2 uzd   ?
+console.log("------ 2 uzduotis ---------");
+
+let text2 = "";
+for (let i = 1; i < 3001; i++) {
+    if (i % 77 == 0){
+    text2 += i + ","; 
+    
+    }
+}
+console.log(text2);
